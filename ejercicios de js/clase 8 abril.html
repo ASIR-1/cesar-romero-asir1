@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+function Visualizar(a, b){
+  
+if (a > b){
+document.write("error: el primero mayor que el segundo")
+}
+else{
+      let inicio = a + 1;
+    let i = inicio;
+    let conta = 0, suma=0;
+    while (i < b){
+        alert(i);
+        suma = suma + i;
+        if (i < 0){
+            conta++;
+        }
+
+    
+        i++;
+    }
+        alert (conta+" valores negativos"+ suma)
+
+}
+}
+
+let num1 = 5;
+let num2 = 8;
+
+Visualizar(num1, num2);
+// sumame en una funcion 2 numeros //
+
+
+</script>
+
+</body>
+</html>
