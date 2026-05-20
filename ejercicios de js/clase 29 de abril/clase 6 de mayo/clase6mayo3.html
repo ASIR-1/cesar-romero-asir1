@@ -1,0 +1,35 @@
+<script>
+function Media(tab_notas){
+    let suma = 0;
+    for (let i = 1; i < tab_notas.length; i++){
+        suma += tab_notas[i];
+    }
+    let media = suma / (tab_notas.length - 1);
+    return media;
+}
+
+function Proceso(mat_alumnos){
+    let mayor = -999;
+    let fila = 0;
+
+    for (let i = 0; i < mat_alumnos.length; i++){
+        if (Media(mat_alumnos[i]) > mayor){
+            mayor = Media(mat_alumnos[i]);
+            fila = i;
+        }
+    }
+    return fila;
+}
+
+function Visualizar (mat_alumnos,fila){
+    alert(mat_alumnos[fila][0] + " tiene de media " + Media(mat_alumnos[fila]));
+}
+
+let mat_alumnos = [
+    ["pedro",5,7,8,9],
+    ["ana",10,7,8,9],
+    ["luis",5,7,8,9]
+];
+
+Visualizar(mat_alumnos,Proceso(mat_alumnos));
+</script>

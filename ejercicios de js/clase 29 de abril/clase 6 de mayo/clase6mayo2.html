@@ -1,0 +1,30 @@
+<script>
+// declarar un array con nombre y notas del alumnos,  calcular la media de las notas
+
+function proceso(tab_notas){
+    let suma = 0;
+for (let i = 1; i<tab_notas.length; i++){
+    suma += tab_notas[i]
+    }
+     media = suma / (tab_notas.length - 1) 
+    return [tab_notas[0], media];
+}
+
+
+
+
+
+function visualizar(tab){
+
+alert ( "la media de " + tab[0] + tab[1])
+
+}
+
+
+
+
+
+//programa principal
+let tabla_notas = ["cesar",10,7,9,3,6,3,7,5]
+visualizar(proceso(tabla_notas))
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+//Declarar un array con notas y visualizar las notas aprobadas utilizando un sw
+
+function Visualizar(tabla_notas){
+  let sw = 0, i = 0;
+  
+  while (sw === 0){
+    if (i === tabla_notas.length){
+      sw = 1;
+    } else {
+      if (tabla_notas[i] >= 5){
+        alert(tabla_notas[i]);
+      } 
+      i++;
+    }
+  }
+}
+
+//programa principal --
+let tab_notas = [10, 3, 5, 6, 7, 8];
+Visualizar(tab_notas);
+
+</script>
+
+</body>
+</html>

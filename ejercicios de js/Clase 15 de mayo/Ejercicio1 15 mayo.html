@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<script>
+//  declarar un array de varios elementos, en el que cada uno de ellos a su vez sea otro array con valores numericos
+//el primer sub array tiene 4
+//el segundo 7
+//el tercero 
+// por cada subarray visualizar el primero y el último
+
+function Visualizar(array){
+    for (let i = 0; i<array.length; i++){
+        alert("el array : " + (i+1) + "el primer número es: " + array[i][0] )
+         alert("el array : " + (i+1) + "el último número es: " + array[i][array[i].length -1 ] )
+    }
+}
+
+
+
+//programa principal
+let array = [
+    [1,2,3,4],
+    [1,3,4,6,8,0],
+    [1,5,3,4,6,7,9]
+];
+Visualizar(array);
+</script>
+
+</body>
+</html>

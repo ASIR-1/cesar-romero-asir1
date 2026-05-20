@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Título de la página</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+
+function Proceso(tab1, tab2){
+    let salir = 0;
+    let i = 0;
+    let igual = "si";
+
+    if (tab1.length != tab2.length){
+        igual = "no";
+    } else {
+        while(salir == 0){
+            if(i == tab1.length){
+                salir = 1;
+            } else {
+                if (tab1[i] != tab2[i]){
+                    igual = "no";
+                    salir = 1;
+                } else {
+                    i++;
+                }
+            }
+        }
+    }
+    return igual;
+}
+
+function Visualizar(dato){
+    if (dato == "si"){
+        alert ("Los arrays son iguales");
+    } else {
+        alert ("Los arrays no son iguales");
+    }
+}
+//programa principal
+
+tabla1 = [1,6,3,4];
+tabla2 = [1,2,3,4];
+Visualizar(Proceso(tabla1, tabla2));
+
+</script>
+</body>
+</html>

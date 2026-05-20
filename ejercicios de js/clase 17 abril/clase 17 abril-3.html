@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Título de la página</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+//pedir números repetidamente siempre y cuando el valor tecleado sea mayor al anterior tecleado, en el momento que la 
+// secuencia se rompa visualizar cuantos numeros han sido tecleados y cuales
+function Proceso(){
+    sw = 0; anterior = -99999; 
+    let numeros = []; 
+    while (sw == 0){
+        numero=parseInt(prompt("Deme numero: "))
+        
+            if (numero > anterior){
+                 numeros.push(numero);
+                anterior = numero;
+            } else {
+                sw = 1
+            }
+          
+        }
+           return numeros
+    }
+
+
+function Visualizar(dato){
+    for (i=0; i <dato.length; i++){
+        alert (dato[i]);
+    }
+    alert ("la cantidad de numeros introducidos es: " + dato.length);
+}
+//programa principal
+resul = Proceso ()
+Visualizar (resul)
+
+</script>
+</body>
+</html>

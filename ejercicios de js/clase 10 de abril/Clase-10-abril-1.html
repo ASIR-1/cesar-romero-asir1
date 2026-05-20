@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+//declarar un array y visualizar si en ese array se encuentra el valor -99 o no
+function Proceso (tabla_n){
+sw = 0;
+for (i=0; i < tab_numeros.lenght; i++){
+    if (tab_numeros[i] == -99){
+        sw= 1
+    }
+}
+return sw;
+}
+
+
+function Visualizar(dato){
+    if (dato == 0){
+        alert ("no existe el valor -99")
+    } else{
+        alert ("si existe el número -99")
+    }
+}
+
+//programa principal --
+
+let tab_numeros=[3,4,5,6,5,-99,8,9]
+resul = Proceso (tab_numeros);
+
+Visualizar (resul);
+</script>
+
+</body>
+</html>

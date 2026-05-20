@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+<script>
+// ----------------- FUNCIONES -----------
+function Proceso(tab_notas) {
+   let i = 0;
+   let suma = 0;
+
+   while (i < tab_notas.length){
+      suma = suma + tab_notas[i];
+      i++;
+   }
+    
+   let media = suma / tab_notas.length;
+   return media;
+}
+
+function Visualizar(dato) {
+   document.write("Media: " + dato);
+}
+
+// ------------------ PROGRAMA PRINCIPAL ---------------
+let tabla_notas = [5,6,7,4];
+Visualizar(Proceso(tabla_notas));
+</script>
+   
+</body>
+
+</html>

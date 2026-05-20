@@ -1,0 +1,37 @@
+<html>
+<body>
+
+<script>
+// se pide notas de forma repetidas hasta que dicte -99, en ese momento visualizar las notas introducidas
+function Proceso(){
+    let sw = 0;
+    let notas = [];
+
+    while (sw == 0){
+        let nota = parseInt(prompt("Introduce una nota ):"));
+
+        if (nota != -99){
+            notas.push(nota);
+        }
+        else {
+            sw = 1;
+        }
+    }
+
+    return notas;
+}
+
+function Visualizar(tabla_notas){
+ for (i=0; i < tabla_notas.length; i++){
+    alert (tabla_notas[i]);
+ }
+}
+
+// Programa principal
+let resul = Proceso();
+Visualizar(resul);
+
+</script>
+
+</body>
+</html>

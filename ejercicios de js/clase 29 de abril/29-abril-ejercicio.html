@@ -1,0 +1,42 @@
+<html>
+<body>
+
+<script>
+// Visualizar el nombre del trabajador con  mas media
+
+function proceso(mat_sueldos){
+mayor=0
+
+    for (let i = 0; i < mat_sueldos.length; i++){
+        let suma = 0;
+        let conta = 0;
+
+        for (let k = 1; k < mat_sueldos[i].length; k++){
+            suma += mat_sueldos[i][k];
+            conta++;
+        }
+         media = suma / conta;
+        if (media > mayor){
+            mayor = media;
+            nombre_trabajador = mat_sueldos[i][0]
+        }
+        
+    }
+return nombre_trabajador + " "+mayor;
+}
+
+function Visualizar(trabajador){
+    alert (trabajador);
+}
+
+// programa principal
+let mat_sueldos = [
+    ["pepe",1000,2000,2000],
+    ["ana",2000,4000],
+    ["Manuel",1000,5000,300]
+];
+
+Visualizar(proceso (mat_sueldos));
+</script>
+</body>
+</html>
