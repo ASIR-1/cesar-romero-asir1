@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <form>
+        <input type="number" id="numero1" placeholder="Primer número">
+        <input type="number" id="numero2" placeholder="Segundo número">
+
+        <input type="button" onClick="Sumar()" value="+">
+        <input type="button" onClick="Restar()" value="-">
+        <input type="button" onClick="Dividir()" value="/">
+        <input type="button" onClick="Multiplicar()" value="*">
+
+        resultado: <p id="resul"></p>
+    </form>
+
+    <script>
+
+        function Sumar() {
+            let num1 = parseInt(document.getElementById("numero1").value);
+            let num2 = parseInt(document.getElementById("numero2").value);
+            let suma = num1 + num2;
+            document.getElementById("resul").innerHTML = suma;
+        }
+          function Restar() {
+            let num1 = parseInt(document.getElementById("numero1").value);
+            let num2 = parseInt(document.getElementById("numero2").value);
+            let resta = num1 - num2;
+            document.getElementById("resul").innerHTML = resta;
+        }
+         function Dividir() {
+            let num1 = parseInt(document.getElementById("numero1").value);
+            let num2 = parseInt(document.getElementById("numero2").value);
+            let division = num1 / num2;
+            document.getElementById("resul").innerHTML = division;
+        }
+           function Multiplicar() {
+            let num1 = parseInt(document.getElementById("numero1").value);
+            let num2 = parseInt(document.getElementById("numero2").value);
+            let multiplicacion = num1 * num2;
+            document.getElementById("resul").innerHTML = multiplicacion;
+        }
+
+    </script>
+
+</body>
+
+</html>
