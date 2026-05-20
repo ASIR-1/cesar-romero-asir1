@@ -1,0 +1,28 @@
+<script>
+//14.-) Declarar un array o lista unidimensional como por ejemplo:
+//tab_numeros =(3, -6, 0, -8, 0, 1, 9). Se pide: cuantos ceros hay en el array o lista
+
+
+function Proceso(tab_numeros){
+    let cantidad_ceros= 0;
+    for (let i = 0; i<tab_numeros.length; i++ ){
+        if (tab_numeros[i] == 0){
+        cantidad_ceros ++
+        }
+    }
+return cantidad_ceros
+}
+function Visualizar(dato){
+    alert("hay " + dato + " ceros")
+}
+
+
+
+//programa principal
+
+let tabla_numeros=[3, -6, 0, -8, 0, 0, 9];
+
+let resul = Proceso(tabla_numeros);
+Visualizar(resul);
+
+</script>

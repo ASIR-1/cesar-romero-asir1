@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> JavaScript Objets</h1>
+    <h2> JavaScript Objets</h2>
+    <p id="demo"></p>
+
+<script> 
+    //-------------------- JAVASCRIPT CON JSON --------
+    // El JSON es un String. Fijate en las comillas que envuelven Todo el bloque.
+    const productoJson= '{"id":101,"nombre": "Monitor 4K","disponible":true,"precio":350.50}'
+    // Para poder usarlo como un objeto, necesitas transformarlo:
+    const productoConvertido = JSON.parse(productoJSON);
+
+    alert ("CON JSON: "+productoConvertido.id); //Resultado: "Monitor 4K"
+
+//---------------- JAVASCRIPT CON OBJETOS -------
+const cocheJS ={
+    marca: 'Toyota', //Puedes usar comillas simples
+    modelo: "Corolla", // O comillas dobles
+    año: 2024,
+    encender:function(){//Puede contener funciones (métodos)
+    return "El motor está en marcha";    
+    },
+    propietario: undefined //Admite valores 'undefined'
+
+};
+alert("con objetos javascript: "+cocheJS.encender()); //Funciona porque es un objeto
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+</html>

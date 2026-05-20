@@ -1,0 +1,58 @@
+<script>
+// 11.-) Se declaran dos arrays, visualizar SI o NO ambos son exactamente iguales, es
+// decir, el primero de uno es igual al primero del otro, el segundo de uno al segundo
+// del otro, y así sucesivamente.
+
+
+function Proceso(tab1,tab2){
+let iguales= "si es igual"
+for (let i = 0; i<tab1.length; i++){
+    if (tab1.length != tab2.length){
+         iguales = "no es igual"
+        } else {
+            if (tab1[i] != tab2[i]){
+                iguales = "no es igual"
+            }
+        }
+    }
+    return iguales
+}
+
+function Visualizar(dato){
+alert("el array " + dato);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//programa principal
+let array1=[1,4,6,7]
+let array2=[1,4,6,7]
+let resul = Proceso(array1,array2)
+Visualizar(resul)
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

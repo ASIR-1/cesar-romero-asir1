@@ -1,0 +1,23 @@
+<script>
+let textoJSON = `{
+"alumno1": {
+"nombre": "Ana",
+"edad": 20,
+"nota": 8
+},
+"alumno2": {
+"nombre": "Luis",
+"edad": 22,
+"nota": 7
+}
+}`;
+const alumnos = JSON.parse(textoJSON);
+for(let alumno in alumnos) {
+alert("Alumno:" + alumno);
+for(let clave in alumnos[alumno]) {
+alert(clave + ": " + alumnos[alumno][clave]
+);
+}
+}
+console.log("-----------");
+</script>

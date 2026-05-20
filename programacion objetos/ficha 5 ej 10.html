@@ -1,0 +1,54 @@
+<script>
+//10-) Se declara un array1 con los valores numéricos y el tamaño que quiera. Se
+//declara un array2 con valores numéricos pero con el mismo tamaño que el anterior.
+//Se pide
+//a) Cuantos valores están repetidos en ambos arrays o listas en el mismo orden.
+//b) Guardar los valores anteriores en un array2. Visualizar el array2.
+//array1 = (3, 6, 7, 8, 9, 33)
+//array2 = (3, 4, 7, 3, 9, 33)
+//Respuesta: 4 valores, es decir los valores 3, 7, 9 y 33.
+function proceso(tab1,tab2){
+    let repetidos= 0;
+    let array3= [];
+    for (let i = 0; i<tab1.length;i++){
+if (tab1[i] == tab2[i]) {
+            repetidos++;
+            array3.push(tab1[i]);
+        }
+        
+    }
+
+      alert("en total son: " + repetidos + " valores repetidos")
+    return array3
+    
+}
+function visualizar(array3,repetidos){
+    for (let i = 0; i<array3.length;i++){
+    alert("el numero:" +array3[i]);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//programa principal
+
+let array1=[3, 6, 7, 8, 9, 33];
+let array2=[3, 4, 7, 3, 9, 33];
+visualizar(proceso(array1,array2))
+
+
+
+
+
+</script>

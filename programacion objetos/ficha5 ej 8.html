@@ -1,0 +1,38 @@
+<script>
+
+// Mostrar solo los productos con precio mayor de 100 €
+
+function proceso(productos) {
+
+    let elementos = [];
+
+    for (let producto in productos) {
+
+        if (productos[producto] > 100) {
+            elementos.push(producto) ;
+        }
+
+    }
+
+    return elementos;
+}
+
+function visualizar(dato) {
+    for (let i = 0; i<dato.length; i++){
+        alert( "El producto " + dato[i] + " vale mas de 100 euros")
+    }
+}
+
+// Programa principal
+
+const productos = {
+    disco_duro: 95,
+    ordenador: 600,
+    monitor: 250
+};
+
+let resultado = proceso(productos);
+
+visualizar(resultado);
+
+</script>

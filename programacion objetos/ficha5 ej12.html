@@ -1,0 +1,29 @@
+<script>
+//    12.-) Se declara un objeto con los contagios que ha habido en distintas localidades:
+//“Chiclana” : 130, “Conil” : 220, “San Fernando” : 300
+//Obtener la suma de los contagios de las tres ciudades (130+220+300
+
+
+
+function Proceso(local){
+    let suma= 0
+    for (let localidad in local){
+        suma = suma + local[localidad];
+    }
+    return suma
+}
+function Visualizar(dato){
+    alert("en total ha habido " + dato + " contagios")
+}
+
+// programa principal
+
+const localidades= {
+    Chiclana:130,
+    Conil:220,
+    "San Fernando":300
+}
+let resul = Proceso(localidades);
+Visualizar(resul)
+
+</script>

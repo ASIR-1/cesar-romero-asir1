@@ -1,0 +1,33 @@
+
+<h3> listado de alumnos</h3>
+<div id="resultado"></div>
+<script>
+let text = '{"alumnos":[' +
+'{"nombre":"Luis","nota":7},' +
+'{"nombre":"Ana","nota":8},' +
+'{"nombre":"Pedro","nota":9}' +
+']}';
+
+const objeto_alumnos = JSON.parse(text);
+
+function guardaralumno(){
+    array_objetos_alumnos = [];
+    for (const key in objeto_alumnos.alumnos){
+        array_objetos_alumnos.push(objeto_alumnos.alumnos[key]);
+    }
+    document.getElementById("resultado").innerHTML = "Datos guardados!!";
+}
+
+function mostrarAlumnos(){
+    let texto="";
+    for (const key in array_objetos_alumnos){
+        alert(array_objetos_alumnos[key].nombre + " - Nota: " +
+            array_objetos_alumnos[key].nota);
+    }
+}
+
+guardaralumno();
+mostrarAlumnos();
+
+
+</script>
